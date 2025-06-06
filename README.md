@@ -1,4 +1,4 @@
-## KIRANAWALA : The Quick Commerce 🛒
+## Dynamic Resume Designer 📋
 
 A web-based platform for creating customizable resumes, providing users with an interactive and seamless experience to design and download professional resumes.
 
