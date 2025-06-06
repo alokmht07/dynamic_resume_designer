@@ -1,0 +1,16 @@
+{
+    "version" : 2,
+    "name" : "dynamic_resume_designer",
+    "builds" : [
+        {
+            "src" : "./server.ts",
+            "use" : "@vercel/node"
+        }
+    ],
+    "routes" : [
+        {
+            "src" : "/(.*)",
+            "dest" : "/"
+        }
+    ]
+}
