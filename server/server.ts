@@ -15,7 +15,7 @@ app.set("trust proxy", 1); // trust first proxy
 
 // cors
 const corsOption = {
-  origin: "http://localhost:3000",
+  origin: "process.env.CORS_ORIGIN",
   methods: "GET,POST, PUT, DELETE, PATCH",
   credentials: true,
 }
@@ -33,8 +33,12 @@ const server = http.createServer(app);
 
 connectDb()
   .then(() => {
-    server.listen(4000, () => console.log("server is listening to port 4000"));
-
-    swaggerDocs(app, PORT);
+    server.listen(PORT, () => {
+      console.log(`Server is listening on port ${PORT}`);
+      swaggerDocs(app, PORT);
+    });
   })
-  .catch((err) => console.log("error", err));
+  .catch((err) => {
+    console.error("Error connecting to database:", err);
+    process.exit(1); // Optional: Exit process on DB connection failure
+  });
