@@ -15,7 +15,7 @@ app.set("trust proxy", 1); // trust first proxy
 
 // cors
 const corsOption = {
-  origin: "process.env.CORS_ORIGIN",
+  origin: process.env.CORS_ORIGIN,
   methods: "GET,POST, PUT, DELETE, PATCH",
   credentials: true,
 }
