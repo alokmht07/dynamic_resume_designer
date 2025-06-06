@@ -3,7 +3,7 @@
     "name" : "dynamic_resume_designer",
     "builds" : [
         {
-            "src" : "./server.ts",
+            "src" : "*.ts",
             "use" : "@vercel/node"
         }
     ],

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"tsc",
-    "dev":"nodemon server.ts",
+    "dev": "next dev",
+    "build": "next build && tsc",
     "start": "nodemon server.ts"
   },
   "keywords": [],
