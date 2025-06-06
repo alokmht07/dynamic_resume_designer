@@ -41,7 +41,7 @@ A web-based platform for creating customizable resumes, providing users with an 
 
  1. **Clone the repository:**
     ```bash
-    git clone https://github.com/alokmht07/KIRANAWALA.git
+    git clone https://github.com/alokmht07/dynamic_resume_designer.git
     cd KIRANAWALA
     ```
  2. **Install dependencies:**
