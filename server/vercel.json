@@ -1,16 +1,3 @@
 {
-    "version" : 2,
-    "name" : "dynamic_resume_designer",
-    "builds" : [
-        {
-            "src" : "*.ts",
-            "use" : "@vercel/node"
-        }
-    ],
-    "routes" : [
-        {
-            "src" : "/(.*)",
-            "dest" : "/"
-        }
-    ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
