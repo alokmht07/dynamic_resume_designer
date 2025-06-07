@@ -29,6 +29,13 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use("/api/users", authRouter);
 app.use("/api/users", allRouter);
 
+app.get("/",(request,response)=>{
+    ///server to client
+    response.json({
+        message : "Server is running : " + PORT
+    })
+})
+
 const server = http.createServer(app);
 
 connectDb()
